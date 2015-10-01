@@ -14,6 +14,8 @@
 		BBBB31421BBD1BFB001584DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBB31411BBD1BFB001584DF /* Images.xcassets */; };
 		BBBB31451BBD1BFB001584DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBBB31431BBD1BFB001584DF /* LaunchScreen.xib */; };
 		BBBB31511BBD1BFB001584DF /* AppChooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB31501BBD1BFB001584DF /* AppChooTests.swift */; };
+		BBBB315D1BBD270D001584DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB315B1BBD270D001584DF /* User.swift */; };
+		BBBB315E1BBD270D001584DF /* Ahchoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB315C1BBD270D001584DF /* Ahchoo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		BBBB314A1BBD1BFB001584DF /* AppChooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBB314F1BBD1BFB001584DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBBB31501BBD1BFB001584DF /* AppChooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChooTests.swift; sourceTree = "<group>"; };
+		BBBB315B1BBD270D001584DF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BBBB315C1BBD270D001584DF /* Ahchoo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ahchoo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		BBBB31341BBD1BFB001584DF /* AppChoo */ = {
 			isa = PBXGroup;
 			children = (
+				BBBB315A1BBD26F6001584DF /* Models */,
 				BBBB31371BBD1BFB001584DF /* AppDelegate.swift */,
 				BBBB313C1BBD1BFB001584DF /* ViewController.swift */,
 				BBBB313E1BBD1BFB001584DF /* Main.storyboard */,
@@ -113,6 +118,15 @@
 				BBBB314F1BBD1BFB001584DF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBBB315A1BBD26F6001584DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBBB315B1BBD270D001584DF /* User.swift */,
+				BBBB315C1BBD270D001584DF /* Ahchoo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,8 @@
 		BBBB312A1BBD1BFB001584DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Kate Chupova";
 				TargetAttributes = {
@@ -215,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBB315D1BBD270D001584DF /* User.swift in Sources */,
 				BBBB313D1BBD1BFB001584DF /* ViewController.swift in Sources */,
+				BBBB315E1BBD270D001584DF /* Ahchoo.swift in Sources */,
 				BBBB313B1BBD1BFB001584DF /* AppChoo.xcdatamodeld in Sources */,
 				BBBB31381BBD1BFB001584DF /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +433,7 @@
 				BBBB31561BBD1BFB001584DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBBB31571BBD1BFB001584DF /* Build configuration list for PBXNativeTarget "AppChooTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +442,7 @@
 				BBBB31591BBD1BFB001584DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
