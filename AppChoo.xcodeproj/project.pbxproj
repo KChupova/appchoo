@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBAFFCF21BC682E5001DA0F9 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAFFCF11BC682E5001DA0F9 /* StatisticsViewController.swift */; };
 		BBBB31381BBD1BFB001584DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB31371BBD1BFB001584DF /* AppDelegate.swift */; };
 		BBBB313B1BBD1BFB001584DF /* AppChoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBBB31391BBD1BFB001584DF /* AppChoo.xcdatamodeld */; };
 		BBBB313D1BBD1BFB001584DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB313C1BBD1BFB001584DF /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BBAFFCF11BC682E5001DA0F9 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		BBBB31321BBD1BFB001584DF /* AppChoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBB31361BBD1BFB001584DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBBB31371BBD1BFB001584DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				BBBB315A1BBD26F6001584DF /* Models */,
 				BBBB31371BBD1BFB001584DF /* AppDelegate.swift */,
 				BBBB313C1BBD1BFB001584DF /* ViewController.swift */,
+				BBAFFCF11BC682E5001DA0F9 /* StatisticsViewController.swift */,
 				BBBB313E1BBD1BFB001584DF /* Main.storyboard */,
 				BBBB31411BBD1BFB001584DF /* Images.xcassets */,
 				BBBB31431BBD1BFB001584DF /* LaunchScreen.xib */,
@@ -175,7 +178,7 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Kate Chupova";
 				TargetAttributes = {
 					BBBB31311BBD1BFB001584DF = {
@@ -183,6 +186,7 @@
 					};
 					BBBB31491BBD1BFB001584DF = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = E5X6J8K3M6;
 						TestTargetID = BBBB31311BBD1BFB001584DF;
 					};
 				};
@@ -234,6 +238,7 @@
 				BBBB315D1BBD270D001584DF /* User.swift in Sources */,
 				BBBB313D1BBD1BFB001584DF /* ViewController.swift in Sources */,
 				BBBB315E1BBD270D001584DF /* Ahchoo.swift in Sources */,
+				BBAFFCF21BC682E5001DA0F9 /* StatisticsViewController.swift in Sources */,
 				BBBB313B1BBD1BFB001584DF /* AppChoo.xcdatamodeld in Sources */,
 				BBBB31381BBD1BFB001584DF /* AppDelegate.swift in Sources */,
 			);
@@ -294,10 +299,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Міша GLAGOLA (WG655ZHWVH)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -316,6 +323,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1611cbcb-325d-4ca1-95a4-3bc40d7480dd";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,9 +372,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Міша GLAGOLA (WG655ZHWVH)";
 				INFOPLIST_FILE = AppChoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ketchup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1611cbcb-325d-4ca1-95a4-3bc40d7480dd";
 			};
 			name = Debug;
 		};
@@ -376,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppChoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ketchup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -384,6 +396,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -394,7 +408,9 @@
 				);
 				INFOPLIST_FILE = AppChooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ketchup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppChoo.app/AppChoo";
 			};
 			name = Debug;
@@ -403,13 +419,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = AppChooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ketchup.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppChoo.app/AppChoo";
 			};
 			name = Release;

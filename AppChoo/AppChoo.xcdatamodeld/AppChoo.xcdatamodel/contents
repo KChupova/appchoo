@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9053" systemVersion="14F27" minimumToolsVersion="Automatic">
     <entity name="Ahchoo" representedClassName="Ahchoo" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="intensity" optional="YES" attributeType="Float" minValueString="0" maxValueString="1" defaultValueString="0.0" syncable="YES"/>
@@ -10,7 +10,7 @@
         <relationship name="ahchoos" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Ahchoo" inverseName="user" inverseEntity="Ahchoo" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Ahchoo" positionX="-207" positionY="-18" width="90" height="88"/>
-        <element name="User" positionX="-360" positionY="-3" width="90" height="73"/>
+        <element name="Ahchoo" positionX="-207" positionY="-18" width="90" height="90"/>
+        <element name="User" positionX="-360" positionY="-3" width="90" height="75"/>
     </elements>
 </model>
